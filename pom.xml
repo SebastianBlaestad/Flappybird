@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
  
     <groupId>TDT4100_project</groupId>
-    <artifactId>tdt4100_v2024_prosjekt_boilerplate</artifactId>
+    <artifactId>flappybird</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
  
-    <name>tdt4100_v2024_prosjekt_boilerplate</name>
+    <name>flappybird</name>
 	
 
    <dependencies>
@@ -61,15 +61,15 @@
 			<version>0.0.8</version>
 			<configuration>
 				<options></options>
-				<mainClass>exampleproject.ExampleProjectApp</mainClass>
+				<mainClass>flappybird.AppGame</mainClass>
 				<!-- for jlink -->
 				<compress>2</compress>
 				<noHeaderFiles>true</noHeaderFiles>
 				<stripDebug>true</stripDebug>
 				<noManPages>true</noManPages>
-				<launcher>exampleproject</launcher>
-				<jlinkImageName>exampleproject</jlinkImageName>
-				<jlinkZipName>exampleproject</jlinkZipName>
+				<launcher>flappybird</launcher>
+				<jlinkImageName>flappybird</jlinkImageName>
+				<jlinkZipName>flappybird</jlinkZipName>
 			</configuration>
 	    </plugin>
 

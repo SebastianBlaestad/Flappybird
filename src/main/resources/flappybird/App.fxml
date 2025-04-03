@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flappybird.flappybirdController">
+   <children>
+      <Label fx:id="result" layoutX="257.0" layoutY="244.0" />
+      <ImageView fx:id="myBackground" fitHeight="414.0" fitWidth="675.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bottom1" fitHeight="141.0" fitWidth="124.0" layoutX="650.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="top1" fitHeight="141.0" fitWidth="124.0" layoutX="650.0" layoutY="-63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="myBird" fitHeight="35.0" fitWidth="33.0" layoutX="57.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flappy.png" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="217.0" layoutY="261.0" prefHeight="25.0" prefWidth="51.0" />
+      <ButtonBar layoutX="197.0" layoutY="61.0" prefHeight="40.0" prefWidth="200.0" />
+    <Button fx:id="startButton" layoutX="311.0" layoutY="15.0" mnemonicParsing="false" onAction="#startGame" text="Start" />
+      <ImageView fx:id="top2" fitHeight="141.0" fitWidth="124.0" layoutX="817.0" layoutY="-63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="top3" fitHeight="141.0" fitWidth="124.0" layoutX="986.0" layoutY="-63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="top4" fitHeight="141.0" fitWidth="124.0" layoutX="1156.0" layoutY="-63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bottom2" fitHeight="141.0" fitWidth="124.0" layoutX="817.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bottom3" fitHeight="141.0" fitWidth="124.0" layoutX="986.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bottom4" fitHeight="141.0" fitWidth="124.0" layoutX="1156.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="top5" fitHeight="141.0" fitWidth="124.0" layoutX="1325.0" layoutY="-63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bottom5" fitHeight="141.0" fitWidth="124.0" layoutX="1325.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" scaleY="2.5">
+         <image>
+            <Image url="@pipe.png" />
+         </image>
+      </ImageView>
+      <ButtonBar layoutX="113.0" layoutY="214.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label fx:id="scoreLabel" layoutX="486.0" layoutY="25.0" text="Highscore: 0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastScore" layoutX="44.0" layoutY="25.0" text="Last score: 0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
