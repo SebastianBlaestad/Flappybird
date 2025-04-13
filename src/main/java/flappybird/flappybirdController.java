@@ -37,13 +37,15 @@ public class flappybirdController {
 
     private ScoreManager scoreManager;
 
+    private final String txt_file = "./src/main/java/flappybird/highscore.txt";
+
     @FXML
     public void initialize(){
        lastScore.setVisible(false);
        startButton.setVisible(true);
        scoreLabel.setVisible(true);
        this.scoreManager = new ScoreManager();
-       this.scoreLabel.setText("Highscore: " + scoreManager.readHighScore("highscore.txt"));
+       this.scoreLabel.setText("Highscore: " + scoreManager.readHighScore(txt_file));
     }
 
 
@@ -82,7 +84,7 @@ public class flappybirdController {
             if (!bird.checkBottomAndTop(myBackground.getLayoutY(), height)){
                 myBird.setLayoutY(myBackground.getFitHeight() / 2);
                 gameLoop.stop();
-                scoreManager.writeHighScore("highscore.txt");
+                scoreManager.writeHighScore(txt_file);
                 scoreLabel.setText("Highscore: " + scoreManager.getHighScore());
                 lastScore.setText("Last score: " + scoreManager.getCurrentScore());
                 lastScore.setVisible(true);
@@ -97,7 +99,7 @@ public class flappybirdController {
                 if (pillarPair.birdCollides(bird)){
                     myBird.setLayoutY(myBackground.getFitHeight() / 2);
                     gameLoop.stop();
-                    scoreManager.writeHighScore("highscore.txt");
+                    scoreManager.writeHighScore(txt_file);
                     scoreLabel.setText("Highscore: " + scoreManager.getHighScore());
                     lastScore.setText("Last score: " + scoreManager.getCurrentScore());
                     lastScore.setVisible(true);
