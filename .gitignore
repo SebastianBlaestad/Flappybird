@@ -2,6 +2,8 @@
 # Created by https://www.gitignore.io/api/java,maven,eclipse,intellij+all,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=java,maven,eclipse,intellij+all,visualstudiocode
 
+./src/main/resources/dokumentasjon.md
+
 .metadata
 bin/
 tmp/
@@ -13,6 +15,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+
 
 # External tool builders
 .externalToolBuilders/
